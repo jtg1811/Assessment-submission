@@ -29,7 +29,6 @@ Create a function `add(string numbers)` that takes a string of numbers separated
 - Support custom single-character delimiters using the syntax `//[delimiter]\n[numbers...]`
 - Raise an exception for negative numbers and list all of them in the error message
 - Ignore numbers greater than 1000
-- Support multiple custom delimiters using syntax like `//[***][%]\n1***2%3`
 
 ---
 
