@@ -1,5 +1,5 @@
 from string_calculator import add
-
+import pytest
 def test_empty_string_returns_zero() :
     assert add("") == 0
 
@@ -18,3 +18,7 @@ def test_newline_and_comma_delimiters() :
 def test_custom_delimiter() :
     assert add("//;\n;1;2") == 3
 
+def test_negative_numbers_throw_exception() :
+    with pytest.raises(Exception) as excinfo :
+        add("1,-5,-9")
+    assert "negative numbers not allowed -5,-9" in str(excinfo.value)
