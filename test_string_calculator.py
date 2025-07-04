@@ -11,3 +11,6 @@ def test_two_number_returns_sum() :
 
 def test_multiple_numbers_returns_sum() :
     assert add("1,3,4,7") == 15
+
+def test_newline_and_comma_delimiters() :
+    assert add("1\n2,3") == 6
