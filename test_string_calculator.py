@@ -17,3 +17,4 @@ def test_newline_and_comma_delimiters() :
 
 def test_custom_delimiter() :
     assert add("//;\n;1;2") == 3
+
