@@ -8,4 +8,6 @@ def test_single_number_return_values() :
 
 def test_two_number_returns_sum() :
     assert add("1,2") == 3
-    
+
+def test_multiple_numbers_returns_sum() :
+    assert add("1,3,4,7") == 15
